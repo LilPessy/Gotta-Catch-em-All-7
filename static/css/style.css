@@ -35,3 +35,58 @@
 .subtitle h3{
     font-weight: normal;
 }
+
+.card{
+    border-radius: 15px;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card .cardpic{
+    background-color: #e36736;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .cardpic img{
+    width: 50%;
+}
+
+.card .description{
+    width: 58%;
+    padding: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.description *{
+    padding-top: 5px;
+    
+}
+
+.cardspecific{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardspecific span.regular{
+    width: 50%;
+}
+
+.cardtitle h5{
+    font-size: 20px;
+}
+
+span.bold{
+    font-weight: bold;
+}
