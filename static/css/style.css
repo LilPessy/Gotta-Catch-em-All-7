@@ -123,7 +123,25 @@ span.bold{
     color: #ffffff;
     cursor: pointer;
     border-radius: 15px;
-    margin-top: 25px;
     padding-top: 18px;
     padding-bottom: 18px;
+    margin-top: 25px;
+}
+#grid{
+    display: grid;
+    grid-column: 3;
+    grid-row: 3;
+    column-gap: 12px;
+    row-gap: 26px;
+    grid-template-columns: auto auto auto;
+    
+}
+#myForm{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
 }
