@@ -113,3 +113,17 @@ span.bold{
     font-size: 14px;
     color: #CBCBCB;
 }
+#btnsubmit{
+    width: 30vw;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #94E1A5;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
