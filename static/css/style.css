@@ -90,3 +90,26 @@
 span.bold{
     font-weight: bold;
 }
+.fielcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fieldlabel{
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.fieldinput{
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 30vw;
+    height: 52px;
+    text-align: center;
+}
+.fieldinput::placeholder{
+    text-align: center;
+    font-size: 14px;
+    color: #CBCBCB;
+}
