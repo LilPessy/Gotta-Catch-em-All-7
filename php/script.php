@@ -21,8 +21,6 @@ if(!is_readable($file)) {
 }
 $rows = file($file);
 
-
-
 ?>
 <div class="pokemonList">
     <?php
@@ -43,6 +41,12 @@ $rows = file($file);
         </div>
     <?php
     }
+    ?>
+</div>
+
+<div class="getForm">
+    <?php
+        $_GET["HP"]
     ?>
 </div>
 </body>
