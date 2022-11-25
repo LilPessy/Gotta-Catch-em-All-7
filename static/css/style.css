@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 .container{
@@ -11,4 +14,134 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.title{
+    width: 100vw;
+    font-size: 44px;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 18px;
+    max-width: 69%;
+}
+
+.subtitle span{
+    font-weight: bold;
+}
+
+.subtitle h3{
+    font-weight: normal;
+}
+
+.card{
+    border-radius: 15px;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card .cardpic{
+    background-color: #e36736;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .cardpic img{
+    width: 50%;
+}
+
+.card .description{
+    width: 58%;
+    padding: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.description *{
+    padding-top: 5px;
+    
+}
+
+.cardspecific{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardspecific span.regular{
+    width: 50%;
+}
+
+.cardtitle h5{
+    font-size: 20px;
+}
+
+span.bold{
+    font-weight: bold;
+}
+.fielcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fieldlabel{
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.fieldinput{
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 30vw;
+    height: 52px;
+    text-align: center;
+}
+.fieldinput::placeholder{
+    text-align: center;
+    font-size: 14px;
+    color: #CBCBCB;
+}
+#btnsubmit{
+    width: 30vw;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #94E1A5;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 25px;
+}
+#grid{
+    display: grid;
+    grid-column: 3;
+    grid-row: 3;
+    column-gap: 12px;
+    row-gap: 26px;
+    grid-template-columns: auto auto auto;
+    
+}
+#myForm{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
 }
