@@ -24,29 +24,42 @@ $rows = file($file);
 ?>
 <div class="pokemonList">
     <?php
-    foreach($rows as $row) {            //separazione delle colonne in un array di stringhe
-        $columns = explode(',', $row);
+    $pokedex = [];
+    foreach($rows as $row) {     
+                                   //separazione delle colonne in un array di stringhe
+        array_push($pokedex, $row);
+    }
+    array_splice($pokedex, 0, 1); //toglie l'intestazione
+
+    //echo($pokedex[0]);
+
+    foreach($pokedex as $pokemon) {     
+                                  //qui farai l'array associativo
+                                  $value = explode(",", $pokemon);
+                                  echo($value[2]);
+    }
+
     ?>
         <div class="pokemonCard">
         <?php           
-            print($columns[1] . "\t"); // nome
+            /*print($columns[1] . "\t"); // nome
             print($columns[2]); // tipo principale
-
-            /*
-            foreach($columns as $col){      //ciclare per stampare tutte le categorie del pokedex 
+            print($columns[3]); // tipo principale
+            print($columns[9]); // tipo principale*/
+            //$array = [NameType 1Type 2TotalHPAttackDefenseSp. AtkSp. DefSpeedGenerationLegendary]
+            
+            /*foreach($columns as $col){      //ciclare per stampare tutte le categorie del pokedex 
                 print($col);
-            }
-            */
+            }*/
+            
         ?>
         </div>
-    <?php
-    }
-    ?>
 </div>
 
 <div class="getForm">
     <?php
-        $_GET["HP"]
+        //$hp = $_POST["HP"];
+
     ?>
 </div>
 </body>
