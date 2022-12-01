@@ -8,19 +8,18 @@
         $SPEED = $_POST["SPEED"];
     }
 
-    function readcsv(){
-        $file = fopen("../data/pokedex.csv", "r");
-        $data = array();
-        while (($line = fgetcsv($file)) !== FALSE) {
-            $data[] = $line;
+    $csv = array_map('str_getcsv', file('../data/pokedex.csv')); //tutto il csv in un array
+    //visualizza il csv
+    print_r($csv); //visualizzi array associativo
+    implode($csv[1]); //trasforma array in stringa
+    
+    function main(){
+        global $all_dim;
+        $all_dim = array();
+        foreach($csv as $line) {
+            formula($line[5], $line[5], $line[5], $line[5], $line[5], $line[5], $all_dim);
         }
-        fclose($file);     
-        return $data; 
+        ricerca($all_dim, $csv);
     }
-    $csv = readcsv();
-    print_r ($csv);
-    echo "cazzo";
-    
-    
 ?>
 
