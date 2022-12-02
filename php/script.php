@@ -13,6 +13,7 @@
     print_r($csv); //visualizzi array associativo
     implode($csv[1]); //trasforma array in stringa
     
+    /*
     function linecsv(){
         global $all_dim;
         $all_dim = array();
@@ -20,7 +21,8 @@
             formula($line[5], $line[6], $line[7], $line[8], $line[9], $line[10], $all_dim);
         }
         ricerca($all_dim, $csv);
-    }
+    } */
+
 
     function pokselection ($hp, $atk, $def, $spatk, $spdef, $speed, $all_dim){
         //formula euclidea
@@ -42,8 +44,8 @@
     }
 
     function printPok($id, $nome,$gen,$tipo1,$tipo2,$hp,$atk,$def,$spatk,$spdef,$speed){
-        echo " 
-        <div class='cardcontainer'>
+        echo 
+        " <div class='cardcontainer'>
             <div class='container2'>
                 <div class='imgcontainer'>
                     <img class='cardimg' src='' alt='Immagine di: $nome'>
@@ -68,5 +70,7 @@
             </div>
         </div>";
     }
+
+
 ?>
 
