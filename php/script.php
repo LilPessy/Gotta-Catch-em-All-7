@@ -40,5 +40,33 @@
         //inserisco i risultati nell'array
         array_push($all_dim, $result);
     }
+
+    function printPok($id, $nome,$gen,$tipo1,$tipo2,$hp,$atk,$def,$spatk,$spdef,$speed){
+        echo " 
+        <div class='cardcontainer'>
+            <div class='container2'>
+                <div class='imgcontainer'>
+                    <img class='cardimg' src='' alt='Immagine di: $nome'>
+                </div>
+                <div class='statscotainer'>
+                    <h3 class='cardname'>$nome</h3>
+                    <p class='cardgen'>Gen. $gen</p>
+                    <p class='cardtypes'>Tipi: <span class=''>$tipo1, $tipo2</span></p>
+                    <div class='cardstats'>
+                        <div>
+                            <p>HP <span class=''>$hp</span></p>
+                            <p>Atk <span class=''>$atk</span></p>
+                            <p>Def <span class=''>$def</span></p>
+                        </div>
+                        <div>
+                            <p>Sp. Atk <span class=''>$spatk</span></p>
+                            <p>Sp. Def <span class=''>$spdef</span></p>
+                            <p>Speed <span class=''>$speed</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>";
+    }
 ?>
 
